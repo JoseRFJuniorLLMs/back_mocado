@@ -1,15 +1,14 @@
-package com.loiane.course;
+package com.loiane.course.course;
 
 import java.util.List;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import com.loiane.course.dto.CourseDTO;
-import com.loiane.course.dto.CoursePageDTO;
-import com.loiane.course.dto.CourseRequestDTO;
+import com.loiane.course.dto.course.CourseDTO;
+import com.loiane.course.dto.course.CoursePageDTO;
+import com.loiane.course.dto.course.CourseRequestDTO;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;

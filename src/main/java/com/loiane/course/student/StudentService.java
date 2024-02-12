@@ -1,7 +1,7 @@
-package com.loiane.course;
+package com.loiane.course.student;
 
-import com.loiane.course.dto.StudentDTO;
-import com.loiane.course.dto.StudentPageDTO;
+import com.loiane.course.dto.student.StudentDTO;
+import com.loiane.course.dto.student.StudentPageDTO;
 import com.loiane.course.dto.mapper.StudentMapper;
 import com.loiane.exception.RecordNotFoundException;
 

@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Component;
 
-import com.loiane.course.Course;
+import com.loiane.course.course.Course;
 import com.loiane.course.Lesson;
-import com.loiane.course.dto.CourseDTO;
-import com.loiane.course.dto.CourseRequestDTO;
+import com.loiane.course.dto.course.CourseDTO;
+import com.loiane.course.dto.course.CourseRequestDTO;
 import com.loiane.course.dto.LessonDTO;
 import com.loiane.course.enums.Category;
 

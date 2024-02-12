@@ -1,4 +1,4 @@
-package com.loiane.course.dto;
+package com.loiane.course.dto.text;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

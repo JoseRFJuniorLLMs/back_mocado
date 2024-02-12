@@ -1,7 +1,7 @@
 package com.loiane.course.dto.mapper;
 
-import com.loiane.course.PrimeTargetText;
-import com.loiane.course.dto.PrimeTargetTextDTO;
+import com.loiane.course.text.PrimeTargetText;
+import com.loiane.course.dto.text.PrimeTargetTextDTO;
 import org.springframework.stereotype.Component;
 
 @Component

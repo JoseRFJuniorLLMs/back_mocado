@@ -1,7 +1,7 @@
-package com.loiane.course;
+package com.loiane.course.text;
 
-import com.loiane.course.dto.PrimeTargetTextDTO;
-import com.loiane.course.dto.PrimeTargetTextPageDTO;
+import com.loiane.course.dto.text.PrimeTargetTextDTO;
+import com.loiane.course.dto.text.PrimeTargetTextPageDTO;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/primeTargetText")
+@RequestMapping("/api/text")
 @Validated
 public class PrimeTargetTextController {
 

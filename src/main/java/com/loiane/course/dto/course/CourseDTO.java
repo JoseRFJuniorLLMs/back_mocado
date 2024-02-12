@@ -1,8 +1,9 @@
-package com.loiane.course.dto;
+package com.loiane.course.dto.course;
 
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.loiane.course.dto.LessonDTO;
 
 /**
  * Used as response object that represents a Course

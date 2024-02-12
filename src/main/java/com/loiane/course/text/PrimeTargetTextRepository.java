@@ -1,4 +1,4 @@
-package com.loiane.course;
+package com.loiane.course.text;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

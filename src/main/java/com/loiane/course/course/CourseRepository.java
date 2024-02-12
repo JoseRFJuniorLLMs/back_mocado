@@ -1,4 +1,4 @@
-package com.loiane.course;
+package com.loiane.course.course;
 
 import java.util.List;
 

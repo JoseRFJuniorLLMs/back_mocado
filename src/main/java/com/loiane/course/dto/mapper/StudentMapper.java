@@ -1,8 +1,8 @@
 package com.loiane.course.dto.mapper;
 
-import com.loiane.course.Student;
-import com.loiane.course.dto.StudentDTO;
-import com.loiane.course.dto.StudentRequestDTO;
+import com.loiane.course.student.Student;
+import com.loiane.course.dto.student.StudentDTO;
+import com.loiane.course.dto.student.StudentRequestDTO;
 import org.springframework.stereotype.Component;
 
 @Component

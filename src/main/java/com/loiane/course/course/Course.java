@@ -1,8 +1,9 @@
-package com.loiane.course;
+package com.loiane.course.course;
 
 import java.util.HashSet;
 import java.util.Set;
 
+import com.loiane.course.Lesson;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
 import org.hibernate.validator.constraints.Length;

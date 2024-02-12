@@ -1,7 +1,7 @@
-package com.loiane.course;
+package com.loiane.course.text;
 
-import com.loiane.course.dto.PrimeTargetTextDTO;
-import com.loiane.course.dto.PrimeTargetTextPageDTO;
+import com.loiane.course.dto.text.PrimeTargetTextDTO;
+import com.loiane.course.dto.text.PrimeTargetTextPageDTO;
 import com.loiane.course.dto.mapper.PrimeTextMapper;
 import com.loiane.exception.RecordNotFoundException;
 

@@ -1,7 +1,7 @@
-package com.loiane.course;
+package com.loiane.course.student;
 
-import com.loiane.course.dto.*;
-
+import com.loiane.course.dto.student.StudentDTO;
+import com.loiane.course.dto.student.StudentPageDTO;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;

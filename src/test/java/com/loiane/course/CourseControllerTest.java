@@ -16,6 +16,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.util.List;
 
+import com.loiane.course.course.Course;
+import com.loiane.course.course.CourseController;
+import com.loiane.course.course.CourseService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -34,9 +37,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.loiane.config.ValidationAdvice;
-import com.loiane.course.dto.CourseDTO;
-import com.loiane.course.dto.CoursePageDTO;
-import com.loiane.course.dto.CourseRequestDTO;
+import com.loiane.course.dto.course.CourseDTO;
+import com.loiane.course.dto.course.CoursePageDTO;
+import com.loiane.course.dto.course.CourseRequestDTO;
 import com.loiane.exception.RecordNotFoundException;
 
 import jakarta.servlet.ServletException;

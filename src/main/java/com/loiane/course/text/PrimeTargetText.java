@@ -1,4 +1,4 @@
-package com.loiane.course;
+package com.loiane.course.text;
 
 import com.loiane.course.enums.Status;
 import com.loiane.course.enums.converters.StatusConverter;

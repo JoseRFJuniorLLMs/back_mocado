@@ -3,8 +3,9 @@ package com.loiane.course;
 import java.util.List;
 import java.util.Set;
 
-import com.loiane.course.dto.CourseDTO;
-import com.loiane.course.dto.CourseRequestDTO;
+import com.loiane.course.course.Course;
+import com.loiane.course.dto.course.CourseDTO;
+import com.loiane.course.dto.course.CourseRequestDTO;
 import com.loiane.course.dto.LessonDTO;
 import com.loiane.course.enums.Category;
 import com.loiane.course.enums.Status;

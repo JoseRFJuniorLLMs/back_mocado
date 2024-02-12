@@ -1,5 +1,6 @@
 package com.loiane.course;
 
+import com.loiane.course.course.Course;
 import org.hibernate.validator.constraints.Length;
 
 import com.fasterxml.jackson.annotation.JsonProperty;

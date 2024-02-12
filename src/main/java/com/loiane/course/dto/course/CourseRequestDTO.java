@@ -1,7 +1,8 @@
-package com.loiane.course.dto;
+package com.loiane.course.dto.course;
 
 import java.util.List;
 
+import com.loiane.course.dto.LessonDTO;
 import org.hibernate.validator.constraints.Length;
 
 import com.loiane.course.enums.Category;
