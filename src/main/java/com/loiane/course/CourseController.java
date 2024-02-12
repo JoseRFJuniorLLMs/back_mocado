@@ -19,7 +19,7 @@ import jakarta.validation.constraints.Positive;
 /**
  * Represents the REST API for the Course resource.
  */
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @Validated
 @RestController
 @RequestMapping("api/course")
