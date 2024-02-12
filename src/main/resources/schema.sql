@@ -61,6 +61,6 @@ INSERT INTO `courses`.`lesson` (`course_id`,`youtube_url`,`name`) VALUES (3,'9q4
 INSERT INTO `courses`.`lesson` (`course_id`,`youtube_url`,`name`) VALUES (4,'tOIp89BBHgw','24: Refatoração Angular Material Table');
 INSERT INTO `courses`.`lesson` (`course_id`,`youtube_url`,`name`) VALUES (5,'3rVmS6psL_U','25: Componentes Inteligentes x Componentes de Apresentação');
 
-INSERT INTO `courses`.`student` (`id`, `name`) VALUES (1, 'John Doe');
-INSERT INTO `courses`.`student` (`id`, `name`) VALUES (2, 'Jane Smith');
-INSERT INTO `courses`.`student` (`id`, `name`) VALUES (3, 'Alice Johnson');
+INSERT INTO `courses`.`student` (`id`, `name`) VALUES (1, 'Fred');
+INSERT INTO `courses`.`student` (`id`, `name`) VALUES (2, 'Junior');
+INSERT INTO `courses`.`student` (`id`, `name`) VALUES (3, 'Fritz');

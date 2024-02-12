@@ -7,5 +7,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 public record StudentDTO(
         @JsonProperty("_id") Long id,
-        String name) {
+        String name, String email, String taxIdentificationNumber, String personalIdentificationNumber, String login,
+        String password) {
 }

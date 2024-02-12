@@ -1,17 +1,14 @@
 package com.loiane;
 
+import com.loiane.course.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 
-import com.loiane.course.Course;
-import com.loiane.course.CourseRepository;
-import com.loiane.course.Lesson;
 import com.loiane.course.enums.Category;
 import com.loiane.course.enums.Status;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 @SpringBootApplication
 public class CrudSpringApplication {
@@ -22,11 +19,14 @@ public class CrudSpringApplication {
 
 	@Bean
 	@Profile("test")
-	CommandLineRunner initDatabase(CourseRepository courseRepository) {
-		return args -> extracted(courseRepository);
+	CommandLineRunner initData(CourseRepository courseRepository, StudentRepository studentRepository) {
+		return args -> {
+			populateCourses(courseRepository);
+			populateStudents(studentRepository);
+		};
 	}
 
-	private void extracted(CourseRepository courseRepository) {
+	private void populateCourses(CourseRepository courseRepository) {
 		courseRepository.deleteAll();
 		for (int i = 1; i < 10; i++) {
 			Course c = new Course();
@@ -42,6 +42,20 @@ public class CrudSpringApplication {
 			}
 
 			courseRepository.save(c);
+		}
+	}
+
+	private void populateStudents(StudentRepository studentRepository) {
+		studentRepository.deleteAll();
+		for (int i = 1; i <= 10; i++) {
+			Student student = new Student();
+			student.setName("Fred " + i);
+			student.setEmail("email@example.com");
+			student.setTax_identification_number("123456789");
+			student.setPersonal_identification_number("987654321");
+			student.setLogin("fred" + i);
+			student.setPassword("password123");
+			studentRepository.save(student);
 		}
 	}
 
