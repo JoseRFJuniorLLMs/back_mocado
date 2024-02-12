@@ -19,10 +19,11 @@ public class CrudSpringApplication {
 
 	@Bean
 	@Profile("test")
-	CommandLineRunner initData(CourseRepository courseRepository, StudentRepository studentRepository) {
+	CommandLineRunner initData(CourseRepository courseRepository, StudentRepository studentRepository, PrimeTargetTextRepository primeTargetTextRepository) {
 		return args -> {
 			populateCourses(courseRepository);
 			populateStudents(studentRepository);
+			populatePrimeTargetText(primeTargetTextRepository);
 		};
 	}
 
@@ -56,6 +57,34 @@ public class CrudSpringApplication {
 			student.setLogin("fred" + i);
 			student.setPassword("password123");
 			studentRepository.save(student);
+		}
+	}
+
+
+	private void populatePrimeTargetText(PrimeTargetTextRepository primeTargetTextRepository) {
+		primeTargetTextRepository.deleteAll();
+		String[] primes = {"love", "happiness", "knowledge", "freedom", "success", "peace", "friendship", "health", "creativity", "passion"};
+		String[] targets = {"heart", "mind", "soul", "life", "journey", "world", "adventure", "destiny", "dreams", "purpose"};
+		String[] text = {
+				"Embark on a journey of self-discovery and personal growth with our English courses.",
+				"Unlock the door to a world of endless opportunities with our English language courses.",
+				"Expand your horizons and broaden your mind by enrolling in our English language programs.",
+				"Experience the joy and fulfillment of learning English with our comprehensive courses.",
+				"Achieve academic and professional success with our tailor-made English language courses.",
+				"Find inner peace and tranquility as you immerse yourself in the beauty of the English language.",
+				"Forge lifelong friendships and connections while mastering the art of English communication.",
+				"Prioritize your health and well-being by investing in your English language skills.",
+				"Unleash your creativity and imagination through the power of English language education.",
+				"Ignite your passion for learning and seize control of your destiny with our English courses."
+		};
+
+		for (int i = 0; i < 10; i++) {
+			PrimeTargetText primeTargetText = new PrimeTargetText();
+			primeTargetText.setPrime(primes[i]);
+			primeTargetText.setTarget(targets[i]);
+			primeTargetText.setText(text[i]);
+			primeTargetText.setStatus(Status.ACTIVE); // Definindo o status como ACTIVE para todos os registros
+			primeTargetTextRepository.save(primeTargetText);
 		}
 	}
 
