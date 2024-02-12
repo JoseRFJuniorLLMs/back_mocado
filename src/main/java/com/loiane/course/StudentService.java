@@ -26,10 +26,10 @@ public class StudentService {
 
     public StudentPageDTO findAll(@PositiveOrZero int page, @Positive @Max(1000) int pageSize) {
         Page<Student> studentPage = studentRepository.findAll(PageRequest.of(page, pageSize));
-        List<StudentDTO> studentDTOs = studentPage.getContent().stream()
+        List<StudentDTO> list = studentPage.getContent().stream()
                 .map(studentMapper::toDTO)
-                .collect(Collectors.toList());
-        return new StudentPageDTO(studentDTOs, studentPage.getTotalElements(), studentPage.getTotalPages());
+                .toList();
+        return new StudentPageDTO(list, studentPage.getTotalElements(), studentPage.getTotalPages());
     }
 
     public List<StudentDTO> findByName(@NotNull @NotBlank String name) {
